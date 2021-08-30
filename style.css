@@ -1,0 +1,42 @@
+.container-app{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.lateral-content{
+    flex-basis:24%
+}
+#screen{
+    flex-basis: 49%;
+}
+#interface{
+    flex-basis: 100%;
+}
+ul{
+    list-style: none;
+}
+#flex-screen-monster{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+#stat{
+flex-basis: 50%;
+}
+#monster{
+    flex-basis: 50%;
+}
+
+
+
+/*
+generals class 
+
+*/
+
+.display-off{
+    display: none;
+}

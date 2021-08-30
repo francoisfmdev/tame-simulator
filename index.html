@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Tamer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container-app">
+        <div class="lateral-content">
+            <ul>
+                <li><button onclick="changeScene('monster')">Monster</button></li>
+                <li>feed</li>
+            </ul>
+        </div>
+
+        <div id="screen">
+
+            <div id="screen-monster">
+                <div id="flex-screen-monster">
+                    <div id="stat">
+                            <ul>
+                                <li>nom<span id="stat-name"></span></li>
+                                <li>lvl<span id="stat-lvl"></span></li>
+                                <li>type<span id="stat-type"></span></li>
+                                <li>PV<span id="stat-pv"></span></li>
+                                <li>sta<span id="stat-sta"></span></li>
+                                <li>atk<span id="stat-atk"></span></li>
+                                <li>def<span id="stat-def"></span></li>
+                                <li>atk spe<span id="stat-atksp"></span></li>
+                                <li>def spe<span id="stat-defsp"></span></li>
+                                <li>spd<span id="stat-spd"></span></li>
+                                
+                            </ul>
+                    </div>
+                    <div id="monster">
+                            <img src="./assets/m1.png">
+                    </div>
+                </div>
+            </div>
+
+            <div id="screen-out" class="display-off">
+                <div id="flex-screen-out">
+                    <p id="out-region"></p>
+                    
+                </div>
+            </div>
+          
+        </div>
+
+        <div class="lateral-content">
+                <ul>
+                    <li><button  onclick="changeScene('out')">out</button></li>
+                    <li>Care</li>
+                </ul>
+        </div>
+
+        <div id="interface">
+            <div id="interface-monster" >
+                    <p>Monster </p>
+            </div>
+            <div id="interface-out" class="display-off" >
+                 <p>out</p>
+            </div>
+        </div>
+   </div>
+   <script src="functions.js"></script>
+   <script src="dex.js"></script>
+   <script src="interface.js"></script>
+   <script src="game.js"></script>
+</body>
+</html>
